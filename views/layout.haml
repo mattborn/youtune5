@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %meta{'charset' => 'utf-8'}
+    %title Youtune5
+    %meta{'author' => 'Matthew Born'}
+    %meta{'description' => 'Youtune5'}
+    %link{:rel => "stylesheet", :href => "/youtune5.css"}
+  %body
+    #page{:data => {:role => 'page'}}
+      %header{:role => 'banner', :data => {:role => 'header'}}
+        %h1 Youtune5
+      #content{:data => {:role => 'content'}}
+        %article{:role => 'main'}
+          =yield
+        %aside{:role => 'complementary'}
+      %footer{:role => 'contentinfo'}
+        %p.copyright © 2012
