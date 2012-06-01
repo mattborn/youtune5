@@ -1,0 +1,108 @@
+
+/* 1. Equalize
+----------------------------------------------------------------------------- */
+
+  /* Reset */
+  
+  article,
+  aside,
+  blockquote,
+  body,
+  dd,
+  div,
+  dl,
+  dt,
+  figure,
+  footer,
+  form,
+  h1,
+  h2,
+  h3,
+  header,
+  input,
+  label,
+  nav,
+  ol,
+  p,
+  section,
+  table,
+  td,
+  textarea,
+  th,
+  tr,
+  time,
+  ul { margin: 0; padding: 0; }
+  
+  /* Base */
+  
+  html { background: #fff; color: #333; overflow-y: scroll; }
+  body { font: 100%/1.5 "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; text-rendering: optimizeLegibility; }
+  
+  /* Block */
+  
+  article,
+  aside,
+  figure,
+  footer,
+  header,
+  nav,
+  section { display: block; }
+  
+  h1 { line-height: 100px; }
+  
+  p { margin: 0 0 1.5em; }
+  
+  ol, ul { list-style-type: none; }
+  
+  pre { overflow-x: scroll; padding: 20px; text-align: left; white-space: pre-wrap; }
+  
+  /* Inline */
+  
+  a { color: #0cf; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  
+  input { width: 240px; font-size: 100%; margin: 0 0 1.5em; padding: 10px; }
+
+
+/* 2. Interface
+----------------------------------------------------------------------------- */
+
+  /* RootClear Floats */
+  
+  #content:after { height: 0; clear: both; content: "\0020"; display: block; visibility: hidden; }
+  
+  /* Page */
+  
+  #page { text-align: center; }
+  
+  /* Header */
+  
+  [role=banner] {}
+  
+  /* Navigation */
+  
+  [role=navigation] {}
+  
+  /* Content */
+  
+  #content {}
+  
+  [role=main] {}
+  
+  [role=complementary] {}
+  
+  /* Footer */
+  
+  [role=contentinfo] {}
+
+
+/* 3. Respond
+----------------------------------------------------------------------------- */
+
+@media (max-device-width: 980px), (max-width: 980px) {
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+
+}

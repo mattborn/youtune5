@@ -1,2 +1,5 @@
-%form{:action => '/api/', :method => 'get'}
-  %input{:type => 'text', :name => 'q'}
+%form{:action => '/search', :method => 'post'}
+  %input{:type => 'text', :name => 'q', :placeholder => 'search for song'}
+
+%pre
+  %code=@data
