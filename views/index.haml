@@ -1,5 +1,5 @@
 %form{:action => '/search', :method => 'post'}
   %input{:type => 'text', :name => 'q', :placeholder => 'search for song'}
 
-%pre
-  %code=@data
+%p
+  %a{:href => @data}=@data

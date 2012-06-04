@@ -8,7 +8,7 @@ class Youtube
   def self.search(terms)
     json = get('https://gdata.youtube.com/feeds/api/videos?max-results=1', :query => {:q => terms, :alt => 'json'}).body
     results = JSON.parse(json)
-  	"First result: #{results['feed']['entry'][0]['link'][0]['href']}"
+  	"#{results['feed']['entry'][0]['link'][0]['href']}"
   end
 end
 
