@@ -8,7 +8,7 @@ class Youtube
   def self.search(terms)
     json = get('https://gdata.youtube.com/feeds/api/videos?max-results=1', :query => {:q => terms, :alt => 'json'}).body
     results = JSON.parse(json)
-  	"#{results['feed']['entry'][0]['id']['$t']}".delete "http://gdata.youtube.com/feeds/api/videos/"
+  	"#{results['feed']['entry'][0]['id']['$t'].gsub("http://gdata.youtube.com/feeds/api/videos/",'')}"
   end
 end
 

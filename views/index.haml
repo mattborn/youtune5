@@ -1,4 +1,6 @@
 %form{:action => '/search', :method => 'post'}
   %input{:type => 'text', :name => 'q', :placeholder => 'search for song'}
-
-%iframe{:src => "http://www.youtube.com/embed/"+@data, :width => 640, :height => 385, :frameborder => 0}
+  
+- if @data
+  %iframe{:src => "http://www.youtube.com/embed/"+@data, :width => 640, :height => 385, :frameborder => 0, :type => "text/html"}
+	
