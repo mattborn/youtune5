@@ -3,7 +3,6 @@ require 'httparty'
 
 class Youtube
   include HTTParty
-  format :json
   
   def self.search(terms)
     json = get('https://gdata.youtube.com/feeds/api/videos?max-results=1', :query => {:q => terms, :alt => 'json'}).body
